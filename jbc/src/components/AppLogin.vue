@@ -1,12 +1,12 @@
 <template>
-<div class="card">
+<div class="card col-md-5 offset-3">
   <h5 class="card-header info-color white-text text-center py-4">
-    <strong>Sign in</strong>
+    <strong>LOGIN</strong>
   </h5>
   <div class="card-body px-lg-5 pt-0">
 
     <!-- Form -->
-    <form class="text-center" style="color: #757575;" action="#!" @submit.prevent="loginUser">
+    <form class="" style="color: #757575;" action="#!" @submit.prevent="loginUser">
 
       <!-- Email -->
       <div class="md-form">
@@ -41,7 +41,7 @@
 
       <!-- Register -->
       <p>Not a member?
-        <a href="">Register</a>
+        <a href="/register">Register</a>
       </p>
 
       

@@ -5,6 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 import VueRouter from 'vue-router';
+
+
+window.$= require('jquery')
+window.JQuery = require('jquery')
+
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
 

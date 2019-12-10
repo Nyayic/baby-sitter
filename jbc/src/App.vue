@@ -1,12 +1,7 @@
 <template>
-<div class="row">
-  <div class="col-sm-3">
-    hallo iv
-  </div>
 
-  <div>
-  </div>
-  <div class="container full-width">
+  <div class="container" id="app">
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <ul class="navbar-nav">
        <li class="nav-item">
@@ -20,15 +15,14 @@
         </li>
         <li class="nav-item ">
           <router-link to="" class="nav-link">register</router-link>
-          <ul>
             <li class="nav-item">
             <router-link to="/child" class="nav-link">children</router-link>
             </li>
             <li class="nav-item">
           <router-link to="/register" class="nav-link">staff register</router-link>
         </li>
-          </ul>
-        </li>
+        
+        
         
       </ul>
     </nav><br />
@@ -36,13 +30,9 @@
       <router-view></router-view>
     </transition>
   </div>
-  <div>
-
-  </div>
   
-test iv2
-  </div>
 </template>
+
 
 <style>
     .fade-enter-active, .fade-leave-active {
@@ -52,3 +42,4 @@ test iv2
       opacity: 0
     }
 </style>
+

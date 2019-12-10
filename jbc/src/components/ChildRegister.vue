@@ -9,42 +9,37 @@
   <div class="card-body px-lg-5 pt-0">
 
     <!-- Form -->
-    <form class="" style="color: #757575;" action="#!" @submit.prevent="registerStaff">
+    <form class="" style="color: #757575;" action="#!" @submit.prevent="registerChild">
       <!-- First Name -->
       <div class="md-form">
-          <label for="staffFirstName">First Name</label>
-        <input type="text" required id="StaffFirstName" class="form-control" v-model="user.StaffFirstName">
+          <label for="childFirstName">First Name</label>
+        <input type="text" required id="childFirstName" class="form-control" v-model="child.childFirstName">
       
       </div>
       <!-- Last Name -->
       <div class="md-form">
-          <label for="staffLastName">Last Name</label>
-        <input type="text" required id="StaffLastName" class="form-control" v-model="user.StaffLastName">
+          <label for="childLastName">Last Name</label>
+        <input type="text" required id="childLastName" class="form-control" v-model="child.childLastName">
       
       </div>
 
       <!-- Telephone Contact -->
       <div class="md-form">
-          <label for="staffFirstName">Telephone</label>
-        <input type="number" required id="StaffTelephone" class="form-control" v-model="user.StaffTelephone">
+          <label for="childParentPhone">Parent's Telephone</label>
+        <input type="number" required id="childParentPhone" class="form-control" v-model="child.childParentPhone">
       
       </div>
 
 
 
-      <!-- Email -->
+      <!-- Parent NAme -->
       <div class="md-form">
-          <label for="LoginFormEmail">E-mail</label>
-        <input type="email" required id="StaffEmail" class="form-control" v-model="user.StaffEmail">
+          <label for="childParentName">Parent's Name</label>
+        <input type="text" required id="childParentName" class="form-control" v-model="child.childParentName">
       
       </div>
 
-      <!-- Password -->
-      <div class="md-form">
-        <label for="LoginFormPassword">Password</label>
-        <input type="password" id="StaffPassword" required class="form-control" v-model="user.StaffPassword">
-        
-      </div>
+      
 
       
 
@@ -74,15 +69,15 @@
 export default {
   data(){
         return {
-         user:{} //starts with an empty object- two way data binding
+         child:{} //starts with an empty object- two way data binding
         }
   },
   methods: {
-    registerStaff(){
-      let uri = 'http://localhost:4000/register';
+    registerChild(){
+      let uri = 'http://localhost:4000/children';
 
-      this.axios.post(uri, this.user).then(() => {
-        this.$router.push({name: 'registers'})  //registers is the collection name
+      this.axios.post(uri, this.child).then(() => {
+        this.$router.push({name: 'childrens'})  //childrens is the collection name
       })
     }
   }
