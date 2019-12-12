@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 const bcryptjs = require('bcryptjs')
 
 // Define collection and schema for Post
-let Children = new Schema({
+let kid = new Schema({
     childFirstName: {
     type: String
   },
@@ -19,8 +19,8 @@ let Children = new Schema({
  
 },
 {
-    collection: 'childrens'
+    collection: 'kids'
 });
 
 
-module.exports = mongoose.model('Childrens', Children);
+module.exports = mongoose.model('kids', kid);

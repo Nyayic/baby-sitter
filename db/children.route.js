@@ -4,12 +4,12 @@ const express = require('express');
 const childrenRoutes = express.Router();
 
 // Require Post model in our routes module
-let Children = require('./children.model');
+let Child = require('./children.model');
 
 // Defined store route
 childrenRoutes.route('/').post(function (req, res) {
-  let children = new Children(req.body);
-  children.save()
+  let child = new Child(req.body);
+  child.save()
     .then(() => {
       res.status(200).json({'Child': 'Child is added successfully'});
     })

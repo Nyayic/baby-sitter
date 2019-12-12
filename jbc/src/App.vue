@@ -1,5 +1,6 @@
 <template>
 
+
   <div class="container" id="app">
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -20,10 +21,7 @@
             </li>
             <li class="nav-item">
           <router-link to="/register" class="nav-link">staff register</router-link>
-        </li>
-        
-        
-        
+        </li> 
       </ul>
     </nav><br />
     <transition name="fade">

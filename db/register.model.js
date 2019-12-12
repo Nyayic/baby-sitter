@@ -16,6 +16,9 @@ let Register = new Schema({
   StaffEmail: {
     type: String
   },
+  StaffRole:{
+    type:String
+  },
   StaffPassword: {
     type: String
   },

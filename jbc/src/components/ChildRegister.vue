@@ -74,10 +74,10 @@ export default {
   },
   methods: {
     registerChild(){
-      let uri = 'http://localhost:4000/children';
+      let uri = 'http://localhost:4000/child';
 
       this.axios.post(uri, this.child).then(() => {
-        this.$router.push({name: 'childrens'})  //childrens is the collection name
+        this.$router.push({name: 'kids'})  //childrens is the collection name
       })
     }
   }

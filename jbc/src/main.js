@@ -4,6 +4,7 @@ import VueCarousel from '@chenfengyuan/vue-carousel';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import VueAxios from 'vue-axios';
 import axios from 'axios';
+
 import VueRouter from 'vue-router';
 
 

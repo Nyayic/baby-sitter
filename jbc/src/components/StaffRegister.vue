@@ -39,6 +39,12 @@
       
       </div>
 
+      <div class="md-form">
+          <label for="LoginFormEmail">Roles</label>
+        <input type="text" required id="StaffRole" class="form-control" v-model="user.StaffRole">
+      
+      </div>
+
       <!-- Password -->
       <div class="md-form">
         <label for="LoginFormPassword">Password</label>
