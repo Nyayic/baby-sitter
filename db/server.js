@@ -22,7 +22,12 @@ mongoose
       console.log('Can not connect to the database' + err)
     }
   )
-
+// app.use(
+//   cors({
+//     origin: ['http://localhost:8080'],
+//     credentials: true
+//   })
+// )
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
