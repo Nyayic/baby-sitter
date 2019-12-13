@@ -1,6 +1,6 @@
 const express = require('express');
 const loginRoute = express.Router();
-const post  = require('./register.model')
+const post  = require('./models/Employee')
 
 loginRoute.post('/', async(req, res) => {
     console.log(req.body)
